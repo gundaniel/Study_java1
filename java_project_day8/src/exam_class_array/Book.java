@@ -24,7 +24,7 @@ public class Book {
 	public String getAuthor() {
 		return author;
 	}
-	public void setAuthor() {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
 	
@@ -33,6 +33,8 @@ public class Book {
 		System.out.print(bookName + ", " + author);
 	}
 	
-
+	public String toString() {
+		return bookName + ", " + author; 
+	}	
 
 }
