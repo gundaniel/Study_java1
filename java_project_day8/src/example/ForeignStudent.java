@@ -5,7 +5,6 @@ public class ForeignStudent extends Student {
 	
 	//생성자 선언
 	public ForeignStudent(String name, int age, int classnum, String from) {
-		
 		super(name, age, classnum);
 		this.from = from;
 	}
@@ -20,7 +19,7 @@ public class ForeignStudent extends Student {
 	
 	//출력 메서드
 	public String show() {
-		return super.show() + "국적: " + from;
+		return super.show() + ", 국적: " + from;
 	}
 
 }

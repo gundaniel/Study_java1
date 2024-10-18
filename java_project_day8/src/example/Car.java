@@ -19,8 +19,7 @@ public class Car {
 	}
 	
 	public String toString() {
-		return String.format("[색상]%-10s[생산수량] %-10d",color , account);
+		return "[색상] " + color + "\t[생산수량] " + account + "\t";
 	}
-	
-	
+
 }

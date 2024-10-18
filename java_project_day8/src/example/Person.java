@@ -28,6 +28,6 @@ public class Person {
 	
 	//출력 메서드
 	public String show() {
-		return "이름 : " + name + "나이 : "+ age;
+		return "이름 : " + name + ", 나이 : "+ age;
 	}
 }

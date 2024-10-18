@@ -1,6 +1,7 @@
 package exam_class;
 
 	public class Day {
+		
 		private String work; // 하루의 할 일을 나타내는 문자열
 		
 		//설정자
