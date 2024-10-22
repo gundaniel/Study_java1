@@ -1,6 +1,6 @@
 package exam_interface;
 
-public class SmartTelevision implements RemotneControl, Searchable{
+public class SmartTelevision implements RemoteControl, Searchable{
 
 	private int volume;
 	
@@ -17,11 +17,11 @@ public class SmartTelevision implements RemotneControl, Searchable{
 	@Override
 	
 	public void setVolume(int volume) {
-		if(volume > RemotneControl.MAX_VOLUME) {
-			this.volume = RemotneControl.MAX_VOLUME;
+		if(volume > RemoteControl.MAX_VOLUME) {
+			this.volume = RemoteControl.MAX_VOLUME;
 		}
-		else if(volume < RemotneControl.MIN_VOLUME) {
-			this.volume = RemotneControl.MIN_VOLUME;
+		else if(volume < RemoteControl.MIN_VOLUME) {
+			this.volume = RemoteControl.MIN_VOLUME;
 		}
 		else {
 			this.volume = volume;

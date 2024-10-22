@@ -7,7 +7,9 @@ public class TelevisionTest {
 		tv.turnOn();
 		tv.setVolume(20);
 		System.out.println(tv.toString());
+		tv.setMute(true);
 		tv.turnOff();
+		RemoteControl.changeBattery(); //정적이기 때문에 해당 인터페이스명.메서드명()으로 선언
 		tv.printChannel();
 		System.out.println();
 		

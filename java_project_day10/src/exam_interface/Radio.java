@@ -1,6 +1,6 @@
 package exam_interface;
 
-public class Radio implements RemotneControl {
+public class Radio implements RemoteControl {
 	private int rvolume;
 	private int rchannel;
 	private double rFrequncy;
@@ -19,11 +19,11 @@ public class Radio implements RemotneControl {
 	
 	@Override
 	public void setVolume(int rvolume) {
-		if(rvolume > RemotneControl.MAX_VOLUME) {
-			this.rvolume = RemotneControl.MAX_VOLUME;
+		if(rvolume > RemoteControl.MAX_VOLUME) {
+			this.rvolume = RemoteControl.MAX_VOLUME;
 		}
-		else if(rvolume < RemotneControl.MIN_VOLUME) {
-			this.rvolume = RemotneControl.MIN_VOLUME;
+		else if(rvolume < RemoteControl.MIN_VOLUME) {
+			this.rvolume = RemoteControl.MIN_VOLUME;
 		}
 		else {
 			this.rvolume = rvolume;

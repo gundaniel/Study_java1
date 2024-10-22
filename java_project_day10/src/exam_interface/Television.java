@@ -1,6 +1,6 @@
 package exam_interface;
 
-public class Television implements RemotneControl {
+public class Television implements RemoteControl {
 	private int volume;
 	private int channel;
 	
@@ -18,11 +18,11 @@ public class Television implements RemotneControl {
 
 	@Override
 	public void setVolume(int volume) {
-		if(volume > RemotneControl.MAX_VOLUME) {
-			this.volume = RemotneControl.MAX_VOLUME;
+		if(volume > RemoteControl.MAX_VOLUME) {
+			this.volume = RemoteControl.MAX_VOLUME;
 		}
-		else if(volume < RemotneControl.MIN_VOLUME) {
-			this.volume = RemotneControl.MIN_VOLUME;
+		else if(volume < RemoteControl.MIN_VOLUME) {
+			this.volume = RemoteControl.MIN_VOLUME;
 		}
 		else {
 			this.volume = volume;
