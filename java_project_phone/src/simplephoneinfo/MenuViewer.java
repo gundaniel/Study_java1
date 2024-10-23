@@ -2,7 +2,7 @@ package simplephoneinfo;
 import java.util.Scanner;
 
 public class MenuViewer {
-    public static Scanner keyboard=new Scanner(System.in);
+    public static Scanner keyboard= new Scanner(System.in);
 
     public static void showMenu(){
         System.out.println("선택하세요...");
