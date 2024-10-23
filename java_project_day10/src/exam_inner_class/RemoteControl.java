@@ -1,4 +1,4 @@
-package exam_interface;
+package exam_inner_class;
 
 public interface RemoteControl {
 		
@@ -7,7 +7,8 @@ public interface RemoteControl {
 	int MIN_VOLUME = 0; // "public static final"을 생략가능
 	
 	//추상 메서드
-	public abstract void turnOn();
+	public abstract void turnOn() ;
+	
 	public abstract void turnOff();
 	
 	void setVolume(int volume); // public abstract 생략

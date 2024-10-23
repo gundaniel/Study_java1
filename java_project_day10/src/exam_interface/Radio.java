@@ -34,9 +34,7 @@ public class Radio implements RemoteControl {
 	}
 	
 	public String toString() {
-		return "현재 라디오 볼륨 :" + rvolume;
-		
+		return "현재 라디오 볼륨 :" + rvolume;	
 	}
-	
 
 }
