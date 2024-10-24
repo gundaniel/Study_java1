@@ -6,7 +6,6 @@ public class Button {
 	void setOnClickListener(OnClickListener listener) {
 		this.listener = listener;
 	}
-	
 	void touch() {
 		listener.onClick();
 	}
