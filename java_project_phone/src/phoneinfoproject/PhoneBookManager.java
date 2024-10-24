@@ -9,7 +9,6 @@ public class PhoneBookManager {
 		curCnt = 0;
 		infoStorage = new PhoneInfo[MAX_CNT];
 	}
-
 	 //==========================================================
     // 일반을 선택했을 때 호출할 메서드(참조값 반환)
     private PhoneInfo readFriendInfo(){
