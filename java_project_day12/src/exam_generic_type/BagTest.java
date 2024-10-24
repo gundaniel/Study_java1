@@ -64,7 +64,6 @@ class NoteBook{
 		this.make = make;
 		this.size = size;
 	}
-	//출력 메서드
 	@Override
 	public String toString() {
 		return "NoteBook [make = " + make + ", size = " + size + "]";
