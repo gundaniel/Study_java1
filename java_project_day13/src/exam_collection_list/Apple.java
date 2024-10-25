@@ -27,6 +27,6 @@ public class Apple {
 
 	//출력 메서드 선언
 	public String toString() {
-		return "사과[품종: " + kind + ", 색상: " + color + "]";
+		return "사과[품종: " + kind + " 색상: " + color + "색]";
 	}
 }
