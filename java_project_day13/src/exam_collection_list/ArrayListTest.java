@@ -97,10 +97,17 @@ public class ArrayListTest {
         // Movie 클래스는 영화제목(mTitle), 평점(mGrade), 감독(mDirector), 개봉일(anYear) 등의 필드를 가진다.
         //인터페이스명<타입 인자> 참조변수 = new 구현클래스 생성자<타입 인자>();
         
-        //List<Movie> list3 = new ArrayList<Movie>();
-        // list3에 저장 및 출력은 여러분이 직접 작성해 주세요.
+        List<Movie> list3 = new ArrayList<Movie>();
+        list3.add(new Movie("스파이더맨1", 9.9, "토비맥과이어", "2002"));
+        list3.add(new Movie("아이언맨1", 9.9, "로버트 다우니주니어", "2008"));
+        list3.add(new Movie("토르1", 9.9, "크리스 햄스워드", "2011"));
+        
+       for (Movie mov : list3) { //향상된 for문 (인스턴스생성 없이 변수 바로 선언가능)
+    	   System.out.println(mov.toString());
+       }
     }
 }
+
 
 			
 		
