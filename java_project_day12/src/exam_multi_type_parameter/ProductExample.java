@@ -2,7 +2,8 @@ package exam_multi_type_parameter;
 
 public class ProductExample {
 	public static void main(String[] args) {
-        // 상품은 자동차, 모델명은 "베뉴"
+     
+		// 상품은 자동차, 모델명은 "베뉴"
 		Product<Car, String> product1 = new Product<Car, String>();
 		product1.setKind(new Car());
 		product1.getKind().setColor("RED");

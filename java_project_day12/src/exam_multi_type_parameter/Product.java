@@ -10,6 +10,7 @@ public class Product<T,M> {
 		this.kind = kind;
 		this.model = model;
 	}
+	
 	//접근자, 설정자
 	public T getKind() {
 		return kind;
@@ -25,10 +26,9 @@ public class Product<T,M> {
 	}
 	
 	//출력메서드
-	
 	@Override
 	public String toString() {
-		return "kind : " + kind.getClass().getSimpleName().toUpperCase() + " model : " + model;		
+		return "kind : " + kind.getClass().getSimpleName().toUpperCase() + " model : " + model;	 //getSimpleName 대문자 변경
 	}
 	
 }
