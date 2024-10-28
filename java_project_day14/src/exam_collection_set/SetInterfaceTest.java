@@ -30,6 +30,7 @@ public class SetInterfaceTest {
 		while(it.hasNext()){
 		  		System.out.println(it.next());
 		}*/
+
       HashSet<Integer> set1 = new HashSet<Integer>();
       set1.add(Integer.valueOf(3));
       set1.add(5);
