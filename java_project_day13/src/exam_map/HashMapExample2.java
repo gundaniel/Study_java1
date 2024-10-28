@@ -10,7 +10,7 @@ public class HashMapExample2 {
 		st.put(1, new Student(99030001, "홍길동"));
 		st.put(2, new Student(99030002, "김도훈"));
 		st.put(3, new Student(99030003, "윤도희"));
-		st.put(3, new Student(99030004, "김희진"));
+		st.put(3, new Student(99030004, "김희진"));   //(키 new
 		
 		System.out.println(st.toString());
 		System.out.println();
