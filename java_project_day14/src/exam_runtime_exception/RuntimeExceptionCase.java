@@ -2,7 +2,7 @@ package exam_runtime_exception;
 
 public class RuntimeExceptionCase {
 	public static void main(String[]args) {
-		//런타임 익셉션 종류  - 비체크 제외
+		//런타임 익셉션 종류  - 비체크예외
 	//----------------------------------------------------	
 		//ArrayIndex 예외 발생
 		try {
