@@ -17,11 +17,23 @@ class Fruit implements Comparable<Fruit>{
 	
 	@Override
 	public int compareTo(Fruit o) {
+<<<<<<< HEAD
 		/*if(price < o.price) return -1;
+=======
+		/*
+		if(price < o.price) return -1;
+>>>>>>> refs/remotes/origin/master
 		else if(price == o.price) return 0;
+<<<<<<< HEAD
 		else return 1; 
 		*/
 		return (this.price < o.price) ? -1: ((this.price == o.price)? 0 :1); //삼항연산자 이용
+=======
+		else return 1;
+		*/
+		return (this.price < o.price) ? -1: ((this.price == o.price)? 0 :1); //삼항연산자 이용
+
+>>>>>>> refs/remotes/origin/master
 	}
 	//출력메서드
 	@Override
