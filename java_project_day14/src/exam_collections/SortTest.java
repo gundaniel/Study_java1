@@ -17,9 +17,11 @@ class Fruit implements Comparable<Fruit>{
 	
 	@Override
 	public int compareTo(Fruit o) {
-		if(price < o.price) return -1;
+		/*if(price < o.price) return -1;
 		else if(price == o.price) return 0;
-		else return 1;
+		else return 1; 
+		*/
+		return (this.price < o.price) ? -1: ((this.price == o.price)? 0 :1); //삼항연산자 이용
 	}
 	//출력메서드
 	@Override
@@ -44,7 +46,6 @@ class Fruit implements Comparable<Fruit>{
 	//------------------------------------------------------------	
 public class SortTest {
 	public static void main(String[]args) {
-		
 		Fruit array[] = {
 				new Fruit("포도",3000),
 				new Fruit("수박",20000),
@@ -53,11 +54,12 @@ public class SortTest {
 		Arrays.sort(array);
 		System.out.println("배열값 : " + Arrays.toString(array));
 		System.out.println();
-	//------------------------------------------------------------	
-	
+		
 		//값을 리스트 타입으로 변환하여 컬랙션 클래스의 정렬메서드를 사용하여 정렬
 		List<Fruit> list = Arrays.asList(array);
 		
+		//------------------------------------------------------------	
+
 		//오름차순 정렬코드 추가
 		Collections.sort(list);
 		System.out.println("오름차순: ");
@@ -81,10 +83,8 @@ public class SortTest {
 		System.out.println("결과값 : " + treeSet.toString());
 		
 		
-	 	
-		
-		
-		
 	}
 	
 }
+
+	
