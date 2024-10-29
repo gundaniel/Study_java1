@@ -17,6 +17,7 @@ public class RuntimeExceptionCase {
 		try {
 			Object x = Integer.valueOf(0);			
 			//부모클래스명 참조변수 = new 서브 클래스 생성자();  
+			
 			System.out.println((String) x);	//예외코드 = 잘못된 형변환으로 예외 발생
 		}
 		catch(ClassCastException e) {
@@ -36,14 +37,24 @@ public class RuntimeExceptionCase {
 		try {
 			String data1 = "100";
 			String data2 = "a100";
-			
 			int value1  = Integer.parseInt(data1);
 			int value2  = Integer.parseInt(data2);
 			
-			int result = value1 + value2; // 스트링타입을 인트로 계산하여 예외 발생
+			int result = value1 + value2; // 스트링타입을 인트로 출력하여 예외 발생
 			System.out.println(data1 + "+" + data2 + "+" + "=" + result);
 		}
 		catch(NumberFormatException e) {
+			e.printStackTrace();
+		}
+	//----------------------------------------------------	
+		// NullPointerException 예외 발생
+		try {
+			String str = null; 
+			@SuppressWarnings("null")
+			int len = str.length(); //null 값의 길이를 불러올때 예외발생
+			System.out.println(len);
+		} 
+		catch (NullPointerException e) {
 			e.printStackTrace();
 		}
 		
