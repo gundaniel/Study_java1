@@ -18,7 +18,7 @@ public class WriteExample1 {
 			os.write(data,1,2);
 			*/
 			
-			byte[] data1 = "學而時習之, 不亦說乎兒 (학이시습지 불역열호아)".getBytes();
+			byte[] data1 = "學而時習之, 不亦說乎兒 (학이시습지 불역열호아)".getBytes(); //내용 안 메시지 
 			os.write(data1);
 			
 			System.out.println("파일 생성되었습니다."); //생성완료시 출력 메시지
