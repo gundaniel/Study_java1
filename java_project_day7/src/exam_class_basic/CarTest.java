@@ -16,9 +16,9 @@ public class CarTest {
 		
 		//객체 메소드 호출 - 참조변수명.메서드();
 		myCar.speedUP(10);
-		myCar.printData();					  //출력방법 예시 1
+		myCar.printData();
 		System.out.println(myCar.toString()); //출력방법 예시 1
-		System.out.println();				  
+		System.out.println();				  //출력방법 예시 2
 		
 	//-----------------------------------------------------------	
 		Car yourCar = new Car();

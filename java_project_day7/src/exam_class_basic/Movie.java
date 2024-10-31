@@ -1,7 +1,7 @@
 package exam_class_basic;
 
 public class Movie {
-
+	
 	public String movieName;
 	public String mDirector;
 	public int runningTime;
@@ -19,9 +19,6 @@ public class Movie {
 	public void printData() { 
 			System.out.println("영화이름은 " + movieName + ", 감독은 " + mDirector + "이며, " //1번 출력예시
 					+ "러닝타임은 " + runningTime + "분 입니다.");
-	}
-	
-	
-	
-	
+	}  
 }
+
