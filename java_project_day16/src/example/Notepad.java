@@ -30,6 +30,7 @@ public class Notepad  implements Serializable {
 			while((str = br.readLine()) != null) {
 				System.out.println(str);
 			}
+			br.close();
 		}
 		catch(FileNotFoundException e) {
 			//e.printStackTrace();
@@ -83,8 +84,6 @@ public class Notepad  implements Serializable {
 					 return;
 			}
 		}
-	}
-			
+	}	
 }
 	
-

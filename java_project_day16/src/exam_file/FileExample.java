@@ -13,7 +13,7 @@ public class FileExample {
 		if(file1.exists()) { //해당위치에 file1이 있을시
 			file1.delete(); //파일 삭제
 		}
-		File file2 = new File("file2.txt");
+		File file2 = new File("C:/Temp/file2.txt");
 		if(!file2.exists()) {
 			file2.createNewFile();
 		}
